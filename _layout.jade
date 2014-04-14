@@ -1,0 +1,44 @@
+doctype 5
+html
+	head
+		title Sixty Watt Shaman
+		meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+		
+		
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel='stylesheet', type='text/css', media='screen', href='/stylesheets/foundation.css')
+		link(rel='stylesheet', type='text/css', media='screen', href='/stylesheets/shaman.css')
+		script(type="text/javascript", src="/js/vendor/modernizr.js")
+		script(type="text/javascript", src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+
+	body
+		header
+			div.row
+				div.large-9.large-centered.medium-10.medium-centered.small-10.small-centered.columns
+					div.row.collapse	
+						div.menu-item.large-4.columns
+							a(href="index.html")
+								div.home_nav
+						div.menu-item.large-4.columns
+							a(href="mythology.html")
+								div.mythology_nav
+						div.menu-item.large-4.columns
+							a(href="store.html")
+								div.store_nav
+					//- ul
+					//- 	li
+					//- 		a(href="index.html")
+					//- 			div.home_nav
+					//- 	li
+					//- 		a(href="mythology.html")
+					//- 			div.mythology_nav
+					//- 	li
+					//- 		a(href="store.html")
+					//- 			div.store_nav
+		div#logo.row
+			div.large-8.large-centered.columns
+				img(src="/images/60_Watt_Background.jpg")
+		
+		!= yield
+
+					
